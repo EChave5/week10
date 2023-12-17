@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container">
+  <br>
+<div class="card" style="background-color: rgb(192, 167, 240); text-align: left;">
+  <div class="card-body">
+    <div class="row">
+      <div class="col-sm">
+        <p class="fw-bold">Shopping List:</p>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm">
+        <div class="form-group">
+          <label for="new-start-date">Go shopping on:</label>
+          <input type="date" name="form-control" id="new-start-date">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm">
+        <div class="form-group">
+          <label for="new-task">Buy this item:</label>
+          <input type="task" name="form-control" id="new-task" placeholder="Item">
+          <div>
+            <button id="add" class="btn btn-secondary form-control">Add to Shopping List</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<table id="list" class="table table-dark table-striped">
+  <tr>
+    <th>Out of:</th>
+    <th>Date added:</th>
+    <th>Shopping trip date:</th>
+    <th>Bought?</th>
+  </tr>
+</table>
+<script src="scripts.js"></script>
+
+  <script src="node_modules/jquery/dist/jquery.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
